@@ -24,7 +24,7 @@
             </div>
             <div class="footer__row">
                 <p class="footer__p--yellow"><span class="yellow-p">Нужны клиенты</span></p>
-                <p class="footer__p">Ознакомтесь с нашим предложением по привлечению <a href="" class="footer__link">клиентов на сайт</a></p>
+                <p class="footer__p">Ознакомьтесь с нашим предложением по привлечению <a href="" class="footer__link">клиентов на сайт</a></p>
             </div>
         </div>
     </footer>
