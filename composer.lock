@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "768c8ff3129e3fff931b2bcf9aafd85d",
+    "hash": "9ef38975e14c1f29170715caaf6c4bae",
     "content-hash": "cdfa3d1bc749e466bdb9e2b7cd302d6f",
     "packages": [
         {
@@ -504,21 +504,22 @@
         },
         {
             "name": "interpro/scalar",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/scalar.git",
-                "reference": "24097ce1fcc8ec884e3b5f0ee3dbbbcd74e8a9e3"
+                "reference": "ea4cedda187b6d6214454191f25e7827ba9614fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/scalar/zipball/24097ce1fcc8ec884e3b5f0ee3dbbbcd74e8a9e3",
-                "reference": "24097ce1fcc8ec884e3b5f0ee3dbbbcd74e8a9e3",
+                "url": "https://api.github.com/repos/intpro/scalar/zipball/ea4cedda187b6d6214454191f25e7827ba9614fd",
+                "reference": "ea4cedda187b6d6214454191f25e7827ba9614fd",
                 "shasum": ""
             },
             "require": {
                 "interpro/core": "1.0.*",
-                "interpro/extractor": "1.0.*"
+                "interpro/extractor": "1.0.*",
+                "interpro/service": "0.1.*"
             },
             "type": "library",
             "extra": {
@@ -547,7 +548,7 @@
             "keywords": [
                 "scalar"
             ],
-            "time": "2017-01-23 10:07:12"
+            "time": "2017-02-07 08:50:29"
         },
         {
             "name": "interpro/seo",
@@ -595,6 +596,52 @@
                 "seo"
             ],
             "time": "2016-12-28 11:01:19"
+        },
+        {
+            "name": "interpro/service",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/intpro/service.git",
+                "reference": "7e88aac55830690c5e5152e27619053512029d01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/intpro/service/zipball/7e88aac55830690c5e5152e27619053512029d01",
+                "reference": "7e88aac55830690c5e5152e27619053512029d01",
+                "shasum": ""
+            },
+            "require": {
+                "interpro/core": "1.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "files": [],
+                "psr-4": {
+                    "Interpro\\Service\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Boris Dorofeev",
+                    "email": "boris.dorofeev@gmail.com"
+                }
+            ],
+            "description": "Обслуживание сайта на движке interpro.",
+            "keywords": [
+                "service"
+            ],
+            "time": "2017-02-07 09:04:59"
         },
         {
             "name": "intervention/image",

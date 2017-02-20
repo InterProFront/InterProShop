@@ -162,6 +162,7 @@ return [
         //============================================
         Interpro\Core\CoreExecServiceProvider::class,
         Interpro\Extractor\ExtractorServiceProvider::class,
+        Interpro\Service\ServiceServiceProvider::class,
         //--------------------------------------------
         Interpro\Scalar\ScalarSecondServiceProvider::class,
         Interpro\Seo\SeoSecondServiceProvider::class,
@@ -179,7 +180,7 @@ return [
         //============================================
 
         /*
-         * Application Service Providers...
+         * Application Sercd dovice Providers...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
