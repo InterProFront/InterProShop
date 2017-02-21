@@ -37,8 +37,6 @@
         @yield('discuss_type')
         @yield('thank')
     </div>
-    <link rel="stylesheet" href="/css/magnific-popup.css">
-    <link rel="stylesheet" href="/css/mobile.css">
     <div class="hide">
         <a href="#thanks" class="thank"></a>
     </div>
