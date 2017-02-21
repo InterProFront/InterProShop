@@ -29,8 +29,14 @@ return [
         //предопределенные поля: from, subject, host, port, encryption, password, to
         'ask' => [
             'form_fields' => [
-                'string' => ['ask_mail','ask_name'],
-                'text'   => ['ask_question']
+                'string' => ['ask_mail','ask_name','ask_phone'],
+                'text'   => ['ask_meeting']
+            ]
+        ],
+        'discuss' => [
+            'form_fields' => [
+                'string' => ['discuss_mail','discuss_name','discuss_phone','discuss_service'],
+                'text'   => ['discuss_meeting']
             ]
         ]
     ]

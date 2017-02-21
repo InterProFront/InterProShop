@@ -79,6 +79,8 @@ $(document).ready(function(){
             if (!validForm){
                 addFields(selector, dataobj);
 
+                ga('send', 'event', 'Knopka', dataobj['fields']['discuss_service']);
+
                 var deferred = $.ajax(
                     {
                         type: 'POST',

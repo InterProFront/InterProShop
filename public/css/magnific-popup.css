@@ -423,7 +423,7 @@ button.mfp-arrow.mfp-arrow-right:hover {
   }
 }
 .white-popup#thanks {
-  padding: 222px 20px;
+  /* padding: 222px 20px; */
 }
 .white-popup#thanks h3.popup_title.center {
   text-align: center;

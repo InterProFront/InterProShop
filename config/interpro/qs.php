@@ -14,6 +14,7 @@ return [
 
     'quick_start' => [
         'image' => ['for_example'],
+        'string' => ['link'],
         'text' => ['example'],
         'groups' => [
             'text_left' => [
@@ -73,6 +74,10 @@ return [
                 'string' => ['cost_with', 'cost_without', 'special_condition', 'spec_cond_color'],
                 'text' => ['descr'],
             ],
+            'shop_work' =>[
+                'shops_variant' => ['superior'],
+                'string' => ['work_name']
+            ]
         ]
     ],
 ];

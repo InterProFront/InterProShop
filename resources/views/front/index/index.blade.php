@@ -122,14 +122,13 @@
                             <p class="tarif__description">{!! $item->descr_field !!}</p>
 
                             <ul class="tarif__services">
-                                <li class="tarif__services-item">Фирменное оформление</li>
-                                <li class="tarif__services-item">Стандартный функционал</li>
-                                <li class="tarif__services-item">Настройка рекламы</li>
-                                <li class="tarif__services-item">Почтовая рассылка</li>
+                                @foreach($item->shop_work_group as $shop_item)
+                                    <li class="tarif__services-item">{{$shop_item->work_name_field}}</li>
+                                @endforeach
                             </ul>
 
                             <p class="tarif__cost-row">@if($item->cost_with_field != '')<span class="sale-row">{{$item->cost_with_field}}</span>@endif{{$item->cost_without_field}}</p>
-                            <button href="#discuss" class="tarif__discuss-button discuss-button discuss-project">Обсудить проект</button>
+                            <button href="#discuss_type" class="tarif__discuss-button discuss-button discuss-project-type">Обсудить проект</button>
                             @if($item->special_condition_field != '')
                                 <div class="tarif__sale" style="background-color: {{$item->spec_cond_color_field}};">{{$item->special_condition_field}}</div>
                             @endif

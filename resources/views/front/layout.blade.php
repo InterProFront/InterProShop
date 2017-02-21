@@ -30,9 +30,11 @@
     @include('front.scripts')
     @yield('scripts')
     @include('front.popups.discuss')
+    @include('front.popups.discuss_type')
     @include('front.popups.thank')
     <div class="hide">
         @yield('discuss')
+        @yield('discuss_type')
         @yield('thank')
     </div>
     <div class="hide">

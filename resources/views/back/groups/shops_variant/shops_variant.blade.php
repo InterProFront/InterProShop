@@ -128,5 +128,19 @@
             </div>
         </div>
     </div>
+    <div class="box box-info group-item-widget"
+         data-block="shop_work">
+        <div class="box-header with-border">
+            <h3 class="box-title"> Работы по сайту </h3>
+            <button type="submit" data-parent="{{$item->id_field}}" class="btn btn-primary pull-right add-flat-item">Добавить</button>
+        </div>
+        <div class="box-body">
 
+            <div class="groupflat-widget group-item-wrap">
+                @foreach($item->shop_work_group as $item_shop)
+                    @include('back.groups.shop_work.shop_work_box', ['item' => $item_shop])
+                @endforeach
+            </div>
+        </div>
+    </div>
 @endsection

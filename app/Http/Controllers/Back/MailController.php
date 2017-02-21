@@ -25,6 +25,7 @@ class MailController extends Controller
         // Объявляем все шаблоны писем для форм
 
         $this->feedback->setBodyTemplate('ask', 'back/mail/ask_mail');
+        $this->feedback->setBodyTemplate('discuss', 'back/mail/discuss_mail');
 
     }
 
