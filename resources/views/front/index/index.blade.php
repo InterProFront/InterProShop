@@ -54,8 +54,10 @@
                 </div>
             </div>
             <div class="quick-start__referat referat">
-                <img src="/img/referat.png" alt="" class="referat__icon">
-                <p class="referat__text">Например, наш <a href="#" class="link">реферат по интернет-магазинам мебели эконом-класса.</a></p>
+                <a target="_blank" href="https://docs.google.com/document/d/1nIqrMdT9-0VU1gnGXIqYPs6w-fh5WHTmj1AANApbct8/edit?usp=sharing">
+                    <img src="/img/referat.png" alt="реферат по интернет-магазинам мебели эконом-класса." class="referat__icon">
+                </a>
+                <p class="referat__text">Например, наш <a rel="noindex" target="_blank" href="https://docs.google.com/document/d/1nIqrMdT9-0VU1gnGXIqYPs6w-fh5WHTmj1AANApbct8/edit?usp=sharing" class="link">реферат по интернет-магазинам мебели эконом-класса.</a></p>
             </div>
         </div>
     </div>
