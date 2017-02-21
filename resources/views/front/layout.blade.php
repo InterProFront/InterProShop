@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     @yield('meta')
     @include('front.styles')
-    @yield('styles')
+
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" type="image/gif" href="/img/FAV.gif">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -29,6 +29,7 @@
     </div>
     @include('front.scripts')
     @yield('scripts')
+    @yield('styles')
     @include('front.popups.discuss')
     @include('front.popups.discuss_type')
     @include('front.popups.thank')
