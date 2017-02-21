@@ -8,8 +8,6 @@ $(document).ready(function(){
             }
         },
         midClick: true
-    }).on('click', function(){
-        ga('send', 'event', 'discuss-project', 'click', 'Discuss the project');
     });
 
     $('.discuss-project-type').magnificPopup({

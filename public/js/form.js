@@ -91,6 +91,8 @@ $(document).ready(function(){
 
                     ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Hypermarket');
 
+                }else{
+                    ga('send', 'event', 'discuss-project', 'click', 'Discuss the project');
                 }
 
                 var deferred = $.ajax(
