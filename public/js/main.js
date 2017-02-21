@@ -21,23 +21,9 @@ $(document).ready(function(){
             }
         },
         midClick: true
-        
+
     }).on('click',function(){
         $('.popup-input[data-name="discuss_service"]').val($(this).closest('.tarif').find('.tarif__name').text());
-
-        if($(this).closest('.tarif').find('.tarif__name').text() == 'Базовый'){
-
-            ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Basic');
-
-        }else if($(this).closest('.tarif').find('.tarif__name').text() == 'Расширенный'){
-
-            ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Extended');
-
-        }else if($(this).closest('.tarif').find('.tarif__name').text() == 'Гипермаркет'){
-
-            ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Hypermarket');
-
-        }
     });
 
     $('.thank').magnificPopup({

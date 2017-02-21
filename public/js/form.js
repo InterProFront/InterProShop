@@ -79,7 +79,19 @@ $(document).ready(function(){
             if (!validForm){
                 addFields(selector, dataobj);
 
-                ga('send', 'event', 'Knopka', dataobj['fields']['discuss_service']);
+                if(dataobj['fields']['discuss_service'] == 'Базовый'){
+
+                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Basic');
+
+                }else if(dataobj['fields']['discuss_service'] == 'Расширенный'){
+
+                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Extended');
+
+                }else if(dataobj['fields']['discuss_service'] == 'Гипермаркет'){
+
+                    ga('send', 'event', 'discuss-project-type', 'click', 'Discuss the project : Hypermarket');
+
+                }
 
                 var deferred = $.ajax(
                     {
