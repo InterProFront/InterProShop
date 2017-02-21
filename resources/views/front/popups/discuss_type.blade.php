@@ -30,7 +30,7 @@
                     <input type="text" class="popup-input" data-name="discuss_phone" data-field-type="string" placeholder="Телефон">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="display: none">
                 <div class="col-1-2">
                     <label  class="row-name">
                         Тип услуги

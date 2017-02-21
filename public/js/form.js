@@ -42,7 +42,7 @@ $(document).ready(function(){
                 error = true;
                 $this.addClass('error');
             }
-            if ( $this.data('name') == 'email' || $this.data('name') == 'ask_mail' ){
+            if ( $this.data('name') == 'discuss_mail' || ($this.data('name') == 'email' || $this.data('name') == 'ask_mail') ){
                 if (isEmail($this.val())){
                     $this.addClass('error');
                     error = true;

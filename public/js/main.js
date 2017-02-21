@@ -5,9 +5,12 @@ $(document).ready(function(){
         callbacks: {
             beforeOpen: function () {
                 this.st.mainClass = 'mfp-zoom-in';
+                $('.popup-input[data-name=ask_phone]').mask('+7 (000) 000-00-00')
             }
         },
         midClick: true
+    }).on('click', function(){
+
     });
 
     $('.discuss-project-type').magnificPopup({
@@ -16,6 +19,7 @@ $(document).ready(function(){
         callbacks: {
             beforeOpen: function () {
                 this.st.mainClass = 'mfp-zoom-in';
+                $('.popup-input[data-name=discuss_phone]').mask('+7 (000) 000-00-00')
             }
         },
         midClick: true
