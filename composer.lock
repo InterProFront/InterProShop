@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9ef38975e14c1f29170715caaf6c4bae",
-    "content-hash": "cdfa3d1bc749e466bdb9e2b7cd302d6f",
+    "hash": "eed269adb4d499616542925998f75765",
+    "content-hash": "5379c3be0e478a76d53de5eef94e3e90",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -221,16 +221,16 @@
         },
         {
             "name": "interpro/core",
-            "version": "1.0.5",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/core.git",
-                "reference": "d7cf1a03bc6d664f9f404c559f9d0e05de79356b"
+                "reference": "427b51adfa892430c78de435af4ab4b94a5da811"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/core/zipball/d7cf1a03bc6d664f9f404c559f9d0e05de79356b",
-                "reference": "d7cf1a03bc6d664f9f404c559f9d0e05de79356b",
+                "url": "https://api.github.com/repos/intpro/core/zipball/427b51adfa892430c78de435af4ab4b94a5da811",
+                "reference": "427b51adfa892430c78de435af4ab4b94a5da811",
                 "shasum": ""
             },
             "type": "library",
@@ -260,29 +260,25 @@
             "keywords": [
                 "core"
             ],
-            "time": "2017-01-21 13:08:39"
+            "time": "2017-02-08 10:56:55"
         },
         {
             "name": "interpro/entrance",
-            "version": "1.0.9",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/entrance.git",
-                "reference": "a82b55d9021481ed414999ea5e9e1c237a18ee05"
+                "reference": "c1a06e6b8873727440208fcf56f981f0130d9dd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/entrance/zipball/a82b55d9021481ed414999ea5e9e1c237a18ee05",
-                "reference": "a82b55d9021481ed414999ea5e9e1c237a18ee05",
+                "url": "https://api.github.com/repos/intpro/entrance/zipball/c1a06e6b8873727440208fcf56f981f0130d9dd3",
+                "reference": "c1a06e6b8873727440208fcf56f981f0130d9dd3",
                 "shasum": ""
             },
             "require": {
-                "interpro/core": "1.0.*",
-                "interpro/extractor": "1.0.*",
-                "interpro/imageaggr": "1.0.*",
-                "interpro/qsaggr": "1.0.*",
-                "interpro/scalar": "1.0.*",
-                "interpro/seo": "1.0.*"
+                "interpro/core": "1.1.*",
+                "interpro/extractor": "1.0.*"
             },
             "type": "library",
             "extra": {
@@ -311,24 +307,24 @@
             "keywords": [
                 "entrance"
             ],
-            "time": "2017-01-23 10:02:45"
+            "time": "2017-02-07 09:19:20"
         },
         {
             "name": "interpro/extractor",
-            "version": "1.0.9",
+            "version": "1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/extractor.git",
-                "reference": "3fd20ac9159f542c83c0c80a5b842aebd423cbb0"
+                "reference": "073ecf2442c3a2ac5c5eb4dd75ae49c92560bb1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/extractor/zipball/3fd20ac9159f542c83c0c80a5b842aebd423cbb0",
-                "reference": "3fd20ac9159f542c83c0c80a5b842aebd423cbb0",
+                "url": "https://api.github.com/repos/intpro/extractor/zipball/073ecf2442c3a2ac5c5eb4dd75ae49c92560bb1d",
+                "reference": "073ecf2442c3a2ac5c5eb4dd75ae49c92560bb1d",
                 "shasum": ""
             },
             "require": {
-                "interpro/core": "1.0.*"
+                "interpro/core": "1.1.*"
             },
             "type": "library",
             "extra": {
@@ -357,25 +353,25 @@
             "keywords": [
                 "extractor"
             ],
-            "time": "2017-01-26 08:27:32"
+            "time": "2017-02-08 09:33:40"
         },
         {
             "name": "interpro/feedback",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/feedback.git",
-                "reference": "bdc82443f43e19e916e98e02607044ace6f4dc3a"
+                "reference": "2218917e5d55cedea937a18c0357fa614626f04e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/feedback/zipball/bdc82443f43e19e916e98e02607044ace6f4dc3a",
-                "reference": "bdc82443f43e19e916e98e02607044ace6f4dc3a",
+                "url": "https://api.github.com/repos/intpro/feedback/zipball/2218917e5d55cedea937a18c0357fa614626f04e",
+                "reference": "2218917e5d55cedea937a18c0357fa614626f04e",
                 "shasum": ""
             },
             "require": {
-                "interpro/core": "1.0.*",
-                "interpro/entrance": "1.0.*",
+                "interpro/core": "1.1.*",
+                "interpro/entrance": "1.1.*",
                 "interpro/extractor": "1.0.*"
             },
             "type": "library",
@@ -405,25 +401,26 @@
             "keywords": [
                 "feedback"
             ],
-            "time": "2017-01-20 12:00:53"
+            "time": "2017-02-07 09:25:15"
         },
         {
             "name": "interpro/imageaggr",
-            "version": "1.0.10",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/imageaggr.git",
-                "reference": "0511693127b483df2d2a2b10cf7bbafaccd2c537"
+                "reference": "14a6d1806a6dd258ac905b790bd2c94ee5eacd49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/0511693127b483df2d2a2b10cf7bbafaccd2c537",
-                "reference": "0511693127b483df2d2a2b10cf7bbafaccd2c537",
+                "url": "https://api.github.com/repos/intpro/imageaggr/zipball/14a6d1806a6dd258ac905b790bd2c94ee5eacd49",
+                "reference": "14a6d1806a6dd258ac905b790bd2c94ee5eacd49",
                 "shasum": ""
             },
             "require": {
-                "interpro/core": "1.0.*",
+                "interpro/core": "1.1.*",
                 "interpro/extractor": "1.0.*",
+                "interpro/service": "1.1.*",
                 "intervention/image": "^2.3"
             },
             "type": "library",
@@ -453,25 +450,26 @@
             "keywords": [
                 "imageaggr"
             ],
-            "time": "2017-01-26 08:05:48"
+            "time": "2017-02-13 12:10:56"
         },
         {
             "name": "interpro/qsaggr",
-            "version": "1.0.7",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/qsaggr.git",
-                "reference": "3f1f566d33deb9189c16f628520098ee21e1cace"
+                "reference": "5746d1a7ee42c7621723e8b00afb6ecf03ee8a40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/3f1f566d33deb9189c16f628520098ee21e1cace",
-                "reference": "3f1f566d33deb9189c16f628520098ee21e1cace",
+                "url": "https://api.github.com/repos/intpro/qsaggr/zipball/5746d1a7ee42c7621723e8b00afb6ecf03ee8a40",
+                "reference": "5746d1a7ee42c7621723e8b00afb6ecf03ee8a40",
                 "shasum": ""
             },
             "require": {
-                "interpro/core": "1.0.*",
-                "interpro/extractor": "1.0.*"
+                "interpro/core": "1.1.*",
+                "interpro/extractor": "1.0.*",
+                "interpro/service": "1.1.*"
             },
             "type": "library",
             "extra": {
@@ -500,26 +498,26 @@
             "keywords": [
                 "qsaggr"
             ],
-            "time": "2017-01-26 10:06:30"
+            "time": "2017-02-07 09:29:56"
         },
         {
             "name": "interpro/scalar",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/scalar.git",
-                "reference": "ea4cedda187b6d6214454191f25e7827ba9614fd"
+                "reference": "7860f4e8a2767734f6c32d12adc86dc8ff364373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/scalar/zipball/ea4cedda187b6d6214454191f25e7827ba9614fd",
-                "reference": "ea4cedda187b6d6214454191f25e7827ba9614fd",
+                "url": "https://api.github.com/repos/intpro/scalar/zipball/7860f4e8a2767734f6c32d12adc86dc8ff364373",
+                "reference": "7860f4e8a2767734f6c32d12adc86dc8ff364373",
                 "shasum": ""
             },
             "require": {
-                "interpro/core": "1.0.*",
+                "interpro/core": "1.1.*",
                 "interpro/extractor": "1.0.*",
-                "interpro/service": "0.1.*"
+                "interpro/service": "1.1.*"
             },
             "type": "library",
             "extra": {
@@ -548,24 +546,24 @@
             "keywords": [
                 "scalar"
             ],
-            "time": "2017-02-07 08:50:29"
+            "time": "2017-02-07 09:31:36"
         },
         {
             "name": "interpro/seo",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/seo.git",
-                "reference": "2a7fac3b805804d016f321e3aa75d509016ec312"
+                "reference": "bd765269c53e583c9eb3454dc6695ebda8829cb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/seo/zipball/2a7fac3b805804d016f321e3aa75d509016ec312",
-                "reference": "2a7fac3b805804d016f321e3aa75d509016ec312",
+                "url": "https://api.github.com/repos/intpro/seo/zipball/bd765269c53e583c9eb3454dc6695ebda8829cb5",
+                "reference": "bd765269c53e583c9eb3454dc6695ebda8829cb5",
                 "shasum": ""
             },
             "require": {
-                "interpro/core": "1.0.*",
+                "interpro/core": "1.1.*",
                 "interpro/extractor": "1.0.*"
             },
             "type": "library",
@@ -595,24 +593,25 @@
             "keywords": [
                 "seo"
             ],
-            "time": "2016-12-28 11:01:19"
+            "time": "2017-02-07 09:34:57"
         },
         {
             "name": "interpro/service",
-            "version": "0.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/service.git",
-                "reference": "7e88aac55830690c5e5152e27619053512029d01"
+                "reference": "9dfa08112be3e6d48bb8fa2b36dee22300bd4563"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/service/zipball/7e88aac55830690c5e5152e27619053512029d01",
-                "reference": "7e88aac55830690c5e5152e27619053512029d01",
+                "url": "https://api.github.com/repos/intpro/service/zipball/9dfa08112be3e6d48bb8fa2b36dee22300bd4563",
+                "reference": "9dfa08112be3e6d48bb8fa2b36dee22300bd4563",
                 "shasum": ""
             },
             "require": {
-                "interpro/core": "1.0.*"
+                "interpro/core": "1.1.*",
+                "interpro/entrance": "1.1.*"
             },
             "type": "library",
             "extra": {
@@ -641,7 +640,7 @@
             "keywords": [
                 "service"
             ],
-            "time": "2017-02-07 09:04:59"
+            "time": "2017-02-07 09:38:07"
         },
         {
             "name": "intervention/image",

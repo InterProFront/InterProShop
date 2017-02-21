@@ -1,0 +1,27 @@
+@media screen and (max-width: 1024px) {
+  
+}
+.recommendations{
+  &__block-title{
+  }
+  &__table{
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .recommendations{
+    &__block-title{
+    }
+    &__table{
+      flex-direction: column;
+    }
+    &__column{
+      max-width: 100%;
+      &:first-child{
+        .comment--last{
+          border-bottom: 1px solid #cccccc;
+        }
+      }
+    }
+  }
+}

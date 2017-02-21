@@ -38,6 +38,11 @@
                 </a>
             </li>
             <li>
+                <a href="/adm/recommendations">
+                    <i class="fa fa-globe"></i> <span>Рекомендации</span>
+                </a>
+            </li>
+            <li>
                 <a href="/adm/seo">
                     <i class="fa fa-chrome"></i> <span>СЕО</span>
                 </a>

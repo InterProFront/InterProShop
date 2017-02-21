@@ -17,6 +17,7 @@ class AdminController extends Controller
         $this->extract->tuneSelection('clients')->sortBy('id','DESC');
         $this->extract->tuneSelection('advantages')->sortBy('id','DESC');
         $this->extract->tuneSelection('works')->sortBy('id','DESC');
+        $this->extract->tuneSelection('recommend')->sortBy('id','DESC');
     }
 
     public function getIndex(){
@@ -83,6 +84,15 @@ class AdminController extends Controller
         $seo = $this->extract->getBlock('static_all_site');
         return view('back.blocks.seo', [
             'seo' => $seo
+        ]);
+    }
+
+
+
+    public function getRecommend(){
+        $shops = $this->extract->getBlock('recommendations');
+        return view('back.blocks.recommendations',[
+            'recommendations' => $shops
         ]);
     }
 }

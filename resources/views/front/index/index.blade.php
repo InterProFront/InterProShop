@@ -80,6 +80,7 @@
             <ul class="all-inclusive__advantages-list advantages-list">
                 @foreach($inclusive->advantages_group as $item)
                     <li class="advantages-list__advantages-item advantages-item">
+                        <img class="advantages-item__icon" src="{{$item->icon_field->link}}" alt="{{$item->icon_field->alt}}">
                         <p class="advantages-item__title">{{$item->adv_title_field}}</p>
                         <p class="advantages-item__description">{{$item->descr_field}}</p>
                     </li>
@@ -96,7 +97,6 @@
             <h2 class="in-cost__block-title block-title block-title--white block-title--over">Что входит в стоимость</h2>
             <div class="in-cost__package package">
                 <ul class="package__in-cost-list in-cost-list">
-
                     @foreach($in_cost->works_group as $item)
                         <li class="in-cost-list__item advantages-item advantages-item--cost">
                             <img src="{{$item->work_field->link}}" alt="{{$item->work_field->alt}}" class="advantages-item__icon">
@@ -105,31 +105,98 @@
                         </li>
                     @endforeach
                 </ul>
+                <p class="package__instruction-and-warranty">
+                  Подготовим инструкцию для сотрудников и предоставим бесплатную поддержку на 3 месяца.
+                    <span class="yellow-black">На сайт действует пожизненная гарантия.</span>
+                </p>
+            </div>
+
+            <div class="in-cost__cost cost">
+
+                <div class="cost__block-title block-title">Магазины на любой вкус</div>
+                <ul class="cost__offers-cost offers-cost">
+                    @foreach($cost->shops_variant_group as $item)
+                        <li class="offers-cost__tarif tarif tarif--package">
+                            <img src="{{$item->figure_field->link}}" class="tarif--before" alt="">
+                            <p class="tarif__name">{{$item->title_field}}</p>
+                            <p class="tarif__description">{!! $item->descr_field !!}</p>
+
+                            <ul class="tarif__services">
+                                <li class="tarif__services-item">Фирменное оформление</li>
+                                <li class="tarif__services-item">Стандартный функционал</li>
+                                <li class="tarif__services-item">Настройка рекламы</li>
+                                <li class="tarif__services-item">Почтовая рассылка</li>
+                            </ul>
+
+                            <p class="tarif__cost-row">@if($item->cost_with_field != '')<span class="sale-row">{{$item->cost_with_field}}</span>@endif{{$item->cost_without_field}}</p>
+                            <button href="#discuss" class="tarif__discuss-button discuss-button discuss-project">Обсудить проект</button>
+                            @if($item->special_condition_field != '')
+                                <div class="tarif__sale" style="background-color: {{$item->spec_cond_color_field}};">{{$item->special_condition_field}}</div>
+                            @endif
+                        </li>
+                    @endforeach
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="wrap-1200">
+        <div class="wrap-1200__recommendations recommendations">
+            <h2 class="recommendations__block-title block-title">Рекомендации клиентов</h2>
+            <div class="recommendations__table">
+                <div class="recommendations__column">
+                    @foreach($rec->recommend_group->odd() as $key => $item)
+                        @if($key >= count($rec->recommend_group->even()) )
+                            <div class="recommendations__comment comment comment--last">
+                        @else
+                            <div class="recommendations__comment comment">
+                        @endif
+                                <div class="comment__head">
+                                    <div class="comment__photo">
+                                        <img src="{{$item->photo_field->link}}" alt="">
+                                    </div>
+                                    <div class="comment__about">
+                                        <p class="comment__name">{{$item->r_name_field}}</p>
+                                        <p class="comment__profession">
+                                            {!! $item->profession_field !!}
+                                        </p>
+                                        <img src="{{$item->logo_field->link}}" alt="" class="comment__logo">
+                                    </div>
+                                </div>
+                                <div class="comment__content">{!! $item->content_field !!}</div>
+                            </div>
+                    @endforeach
+                </div>
+                <div class="recommendations__column">
+                    @foreach($rec->recommend_group->even() as $key => $item)
+                        @if($key == 3 )
+                            <div class="recommendations__comment comment comment--last">
+                                @else
+                                    <div class="recommendations__comment comment">
+                                        @endif
+                                        <div class="comment__head">
+                                            <div class="comment__photo">
+                                                <img src="{{$item->photo_field->link}}" alt="">
+                                            </div>
+                                            <div class="comment__about">
+                                                <p class="comment__name">{{$item->r_name_field}}</p>
+                                                <p class="comment__profession">
+                                                    {!! $item->profession_field !!}
+                                                </p>
+                                                <img src="{{$item->logo_field->link}}" alt="" class="comment__logo">
+                                            </div>
+                                        </div>
+                                        <div class="comment__content">{!! $item->content_field !!}</div>
+                                    </div>
+                                    @endforeach
+
+                    <div class="recommendations__all-recommendations">
+                        <a class="recommendations__link" target="_blank" href="http://interpro.kz/agency/rekomendations">Все рекомендации</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="wrap-1200">
-        <div class="wrap-1200__cost cost">
-            <div class="cost__block-title block-title">Магазины на любой вкус</div>
-            <p class="cost__description">{!! $cost->descr_field !!}</p>
-            <ul class="cost__offers-cost offers-cost">
-                @foreach($cost->shops_variant_group as $item)
-                    <li class="offers-cost__tarif tarif tarif--package">
-                        <img src="{{$item->figure_field->link}}" class="tarif--before" alt="">
-                        <p class="tarif__name">{{$item->title_field}}</p>
-                        <div class="tarif__services">
-                                {!! $item->descr_field !!}
-                        </div>
-                        <p class="tarif__cost-row">@if($item->cost_with_field != '')<span class="sale-row">{{$item->cost_with_field}}</span>@endif{{$item->cost_without_field}}</p>
-                        <button href="#discuss" class="tarif__discuss-button discuss-button discuss-project">Обсудить проект</button>
-                        @if($item->special_condition_field != '')
-                            <div class="tarif__sale" style="background-color: {{$item->spec_cond_color_field}};">{{$item->special_condition_field}}</div>
-                        @endif    
-                    </li>
-                @endforeach
-            </ul>
-        </div>
-    </div>
 
 @endsection

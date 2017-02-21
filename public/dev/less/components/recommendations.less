@@ -1,0 +1,72 @@
+.recommendations{
+  &__block-title{
+    text-align: center;
+  }
+  &__table{
+    display: flex;
+    margin-top: 55px;
+    justify-content: flex-start;
+  }
+  &__column{
+    box-sizing: border-box;
+    max-width: 47%;
+    &:first-child{
+      margin-right: 6%;
+    }
+  }
+  &__comment{
+
+  }
+  &__all-recommendations{
+    width: 80%;
+    background: #eff2f5;
+    text-align: center;
+    padding: 30px;
+  }
+  &__link{
+    font-size:24px;
+    font-family: @Arial;
+    .link(@link-color,@link-border,@hover-color,@hover-border)
+  }
+}
+.comment{
+  &--last{
+    border-bottom: none;
+  }
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  &__head{
+    display: flex;
+    padding-bottom: 20px;
+  }
+  &__photo{
+    padding-right: 20px;
+  }
+  &__about{
+    max-width: 190px;
+
+  }
+  &__name{
+    font-family: @Arial;
+    font-size:20px;
+    color: @gray-1;
+  }
+  &__profession{
+    font-family: @Arial;
+    font-size:16px;
+    color: @gray-2;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    a{
+      .link(@link-color,@link-border,@hover-color,@hover-border)
+    }
+  }
+  &__logo{}
+
+  &__content{
+    font-family: @Arial;
+    line-height: 1.5;
+    color: @gray-2;
+  }
+}

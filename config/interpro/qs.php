@@ -39,6 +39,7 @@ return [
     'all_inclusive' => [
         'groups' => [
             'advantages' => [
+                'image'  => ['icon'],
                 'string' => ['adv_title'],
                 'text' => ['descr'],
             ],
@@ -52,6 +53,15 @@ return [
                 'string' => ['work_title'],
                 'text' => ['descr'],
             ],
+        ]
+    ],
+    'recommendations' => [
+        'groups' => [
+            'recommend' => [
+                'string' => ['r_name', 'profession'],
+                'image'  => ['photo', 'logo'],
+                'text'  => ['content']
+            ]
         ]
     ],
 
