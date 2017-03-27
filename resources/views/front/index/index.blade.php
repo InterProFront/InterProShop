@@ -8,6 +8,9 @@
                     <div class="information-row__discuss">
                         <a href="#discuss" class="link discuss-project">Обсудить проект</a>
                     </div>
+                    <div class="information-row__logo">
+                        <img src="/img/logo.png" alt="Разработка интернет-магазинов, ИнтерПро">
+                    </div>
                     <div class="information-row__phone">{{$all->phone_field}}</div>
                 </div>
             </div>
