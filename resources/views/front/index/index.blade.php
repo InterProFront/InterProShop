@@ -16,7 +16,7 @@
             </div>
             <div class="offers__about about">
                 <h1 class="about__title">Разработка интернет-магазинов:
-                    быстро, хорошо, дорого</h1>
+                    быстро, хорошо, с гарантией</h1>
                 <p class="about__description">{{$offer->offer_about_field}}</p>
             </div>
 
