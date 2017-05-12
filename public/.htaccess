@@ -3,6 +3,11 @@
         Options -MultiViews
     </IfModule>
 
+    <IfModule mod_headers.c>
+        Header set X-XSS-Protection "1; mode=block"
+        Header set X-Frame-Options "DENY"
+    </IfModule>
+
     Header set Cache-Control "max-age=604800, public"
       RewriteEngine On
 
